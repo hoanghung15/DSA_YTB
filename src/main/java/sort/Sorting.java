@@ -11,19 +11,20 @@ public class Sorting {
     public static void bubbleSort(int[] a) {
         int n = a.length;
         for (int i = 0; i < n; i++) {
-            boolean isSorted = true;
+            boolean isShorted = true;
             for (int j = 0; j < n - i - 1; j++) {
                 if (a[j] > a[j + 1]) {
-                    isSorted = false;
+                    isShorted = false;
                     int t = a[j];
                     a[j] = a[j + 1];
                     a[j + 1] = t;
                 }
             }
             printArray(a);
-            if (isSorted) {
+            if (isShorted) {
                 break;
             }
+
         }
     }
 
@@ -66,4 +67,6 @@ public class Sorting {
 //        insertSort(arr);
         selectionSort(arr);
     }
+
+
 }
